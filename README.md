@@ -25,6 +25,11 @@ approach has a number of benefits, including:
     See the `docker-file.yml` for how we specify the subdomain via the
     `VIRTUAL_HOST` environment variable.
 
+  + The use of [data
+    containers](https://medium.com/@ramangupta/why-docker-data-containers-are-good-589b3c6c749e)
+    to persist data between container instances. This ensures that you don't
+    have to reinstall Python eggs, re-run migrations, etc.
+
 ## Avaiable Services ##
 
   + Galaxy at http://galaxy.central-function.ccc.dev
